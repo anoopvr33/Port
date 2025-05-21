@@ -1,0 +1,99 @@
+.section-container {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+  scroll-behavior: smooth;
+}
+section {
+  background-color: rgb(143, 192, 235);
+  width: 100%;
+  height: 100vh;
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  scroll-snap-align: start;
+}
+
+.menu-bar {
+  top: 85vh;
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  padding-left: 15px;
+  gap: 8%;
+  align-items: center;
+}
+.menu-bar .list-1 {
+  font-size: 25px;
+  padding: 9px 10px 7px 11px;
+  border-radius: 50%;
+
+  transition: 1s ease-in;
+  background-color: rgb(119, 119, 218);
+  color: rgb(255, 255, 255);
+  transform: scale(1.1);
+}
+
+.menu-bar .list-2 {
+  font-size: 25px;
+  padding: 9px 10px 7px 11px;
+  border-radius: 50%;
+  transition: 1s ease-in;
+  background-color: rgb(36, 36, 36);
+  color: rgb(255, 255, 255);
+}
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 200px;
+  opacity: 0;
+  width: 0;
+  transition: 0.2s ease-in;
+}
+
+.menu-bar-social {
+  opacity: 1;
+  overflow: hidden;
+  width: 210px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-image: linear-gradient(
+    to top,
+    rgba(253, 58, 123, 0.367),
+    rgba(119, 119, 218, 0.31)
+  );
+  /* background-color: rgb(119, 119, 218); */
+  box-shadow: inset 3px -3px 2px rgb(253, 58, 123);
+  border: 1px solid rgb(253, 58, 123);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 10px;
+  box-shadow: 1px 2px 15px rgba(52, 30, 30, 0.31);
+  font-size: 25px;
+  transition: 0.6s ease-in-out;
+}
+
+@media screen and (min-width: 700px) {
+  .menu-bar-social {
+    width: 400px;
+
+    justify-content: center;
+    gap: 40px;
+    font-size: 30px;
+    /* background-color: rgb(253, 58, 123); */
+    color: rgb(255, 255, 255);
+  }
+  .box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 200px;
+    opacity: 0;
+    width: 0;
+    transition: 0.2s ease-in;
+  }
+}

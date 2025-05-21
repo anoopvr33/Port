@@ -1,0 +1,219 @@
+.home-2 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(0, 0, 0);
+  background-image: linear-gradient(
+    to top,
+    black,
+    black,
+    rgba(108, 108, 210, 0.614)
+  );
+  padding: 15px;
+  /* scale: 0.5; */
+}
+.home-5 {
+  width: fit-content;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  /* position: absolute; */
+  /* right: 85%; */
+  /* left: 30px; */
+  /* background-color: antiquewhite; */
+}
+.home-5 a {
+  color: white;
+  padding: 6px;
+  /* background-color:rgb(119, 119, 218);  */
+  background-color: rgb(0, 0, 0);
+  background-image: linear-gradient(
+    to top,
+    rgba(253, 58, 123, 0.367),
+    rgba(119, 119, 218, 0.31)
+  );
+  /* background-color: rgb(119, 119, 218); */
+  /* box-shadow: inset 3px -3px 2px rgb(253, 58, 123); */
+  border: 1px solid rgb(253, 58, 123);
+  width: 35px;
+  height: 35px;
+  display: grid;
+  place-content: center;
+  /* text-align: center; */
+  border-radius: 10px;
+}
+.home-3 {
+  width: fit-content;
+  height: 25%;
+  padding-right: 18%;
+  /* padding-left: 10%; */
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  justify-content: center;
+  /* align-items: center; */
+  position: relative;
+  /* scale: 0.7; */
+  animation: pop 1s;
+  /* top: 100px; */
+  /* background-color: aliceblue; */
+}
+.home-3 img {
+  position: relative;
+  /* width: 55%; */
+  height: 100%;
+  border-radius: 30px;
+  /* box-shadow: 0px 0px 40px rgba(108, 108, 210, 0.567); */
+}
+.home-3 a {
+  text-decoration: none;
+}
+.home-4 {
+  width: 100%;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+  padding-top: 50px;
+  /* padding-left: 15px; */
+  color: white;
+  /* scale: 0.7; */
+  animation: pop 1s;
+  /* background-color: aliceblue; */
+}
+
+@keyframes pop {
+  0% {
+    scale: 0.7;
+  }
+}
+.home-4 h2 {
+  color: aliceblue;
+  font-size: 20px;
+}
+
+.home-4 h1 {
+  font-size: 30px;
+  margin-top: 10px;
+}
+.home-4 span {
+  color: rgb(119, 119, 218);
+}
+
+.home-4 p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-style: normal;
+}
+
+.home-4 .p4 {
+  position: relative;
+  width: 90vw;
+  top: 5px;
+  white-space: nowrap;
+  overflow: scroll;
+  text-overflow: clip;
+  /* text-overflow: ellipsis; */
+  /* white-space: nowrap; */
+  /* background-color: rgb(253, 58, 123); */
+  border: 1px solid rgb(119, 119, 218);
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.home-4 .p4::-webkit-scrollbar {
+  height: 0px;
+}
+
+.home-5 h5 {
+  display: none;
+}
+
+.home-4 label {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.home-4 .p5 {
+  font-weight: bold;
+}
+@media screen and (min-width: 700px) {
+  .home-5 a {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    justify-content: start;
+    /* background-color: aquamarine; */
+  }
+  .home-5 i {
+    width: 30px;
+    display: grid;
+    /* background-color: aliceblue; */
+    place-content: center;
+    /* display: none; */
+  }
+  .home-5 h5 {
+    display: block;
+    font-size: 15px;
+  }
+  .home-3 img {
+    height: 100%;
+  }
+  .home-5 {
+    /* right: 70%; */
+    width: fit-content;
+    /* padding-right: 0%; */
+    /* background-color: rgb(105, 105, 105); */
+  }
+  .home-3 {
+    /* background-color: aliceblue; */
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* gap: 0px; */
+  }
+}
+@media screen and (min-width: 1000px) {
+  .home-3 {
+    padding-right: 10%;
+  }
+  .home-3 img {
+    /* width: 20%; */
+    /* border: 2px solid rgb(119, 119, 218); */
+    border-radius: 30px;
+    /* border: 2px solid ; */
+    /* box-shadow: -15px 15px 20px rgba(255, 0, 0, 0.397); */
+    /* box-shadow: 0px 0px 40px rgba(108, 108, 210, 0.567); */
+  }
+  .home-5 h5 {
+    /* display: block; */
+    font-size: 15px;
+  }
+
+  .home-5 i {
+    display: block;
+    width: 35px;
+    text-align: center;
+  }
+  .home-5 a {
+    height: 45px;
+  }
+  .home-4 {
+    /* background-color: aliceblue; */
+    width: 80%;
+  }
+  .home-4 .p4 {
+    width: 100%;
+  }
+}

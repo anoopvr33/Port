@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto Condensed;
+  /* background-color: black; */
+  /* background-color: rgb(52, 54, 70); */
+  /* background-color: rgb(36, 36, 36); */
+}
+
+/* body {
+  background-color: rgb(52, 54, 70);
+}
+
+body.dark-mode {
+  background-color: white;
+} */

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./style.css";
-import axios from "../../autils/axios";
+import axios from "../../autils/axios.js";
 import { ToastContainer, toast } from "react-toastify";
 
 const Message = () => {
@@ -17,8 +17,10 @@ const Message = () => {
       const response = await axios.post("/guest/message", data);
       if (response.data.message) {
         toast.success("successfully send");
-      } else {
-        toast.error("error");
+      } else if (response.data.someError) {
+        toast.error("SomeError");
+      } else if (response.data.msgError) {
+        toast.error("msgError");
       }
     }
 

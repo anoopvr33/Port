@@ -11,8 +11,16 @@ router.post("/message", async (req, res) => {
   //     receiver: req.body.receiver,
   //   });
   const body = { ...req.body };
-  const msg = await Message.create(body);
-  res.status(200).json({ message: msg });
+  try {
+    const msg = await Message.create(body);
+    if (msg) {
+      res.status(200).json({ message: msg });
+    } else {
+      res.status(400).json({ msgError: "Error" });
+    }
+  } catch (e) {
+    res.status(500).json({ someError: e.message });
+  }
 });
 
 router.get("/get-message", CheckToken(["ADMIN"]), async (req, res) => {

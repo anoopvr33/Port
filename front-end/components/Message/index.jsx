@@ -59,6 +59,9 @@ const Message = () => {
       <div className="butt" onClick={OnUpload}>
         Send Message<i className="fa-solid fa-paper-plane"></i>
       </div>
+        <div className="butt" onClick={OnUpload}>
+        Delete message<i className="fa-solid fa-paper-plane"></i>
+      </div>
       <span>
         <ToastContainer />
       </span>
